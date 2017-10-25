@@ -1,4 +1,4 @@
-package org.onlineFancy.jewelleryBackend;
+package org.onlineFancyJewellery.backendData;
 
 /**
  * Hello world!

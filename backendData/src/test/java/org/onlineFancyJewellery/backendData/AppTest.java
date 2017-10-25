@@ -1,4 +1,4 @@
-package org.onlineFancy.jewelleryBackend;
+package org.onlineFancyJewellery.backendData;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
