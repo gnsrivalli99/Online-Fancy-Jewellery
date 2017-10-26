@@ -23,12 +23,98 @@ public class HomeController {
 	/*private static final Logger logger = LoggerFactory.getLogger(HomeController.class);*/
 	
 	
-	@RequestMapping(value = {"/","/home","/index"}, method = RequestMethod.GET)
+	@RequestMapping(value = {"/","/home","/index"})
 	public ModelAndView home() {
 		ModelAndView mv=new ModelAndView("home");
-		mv.addObject("greeting", "Welcome To spring Web MVC");
+		mv.addObject("title", "Home");
+		mv.addObject("userClickOnMain",true);
 		return mv;
 	}
+	
+	
+	@RequestMapping(value ="/about")
+	public ModelAndView about() {
+		ModelAndView mv=new ModelAndView("home");
+		mv.addObject("title", "About Us");
+		mv.addObject("userClickOnAbout",true);
+		return mv;
+	}
+	
+	
+	@RequestMapping(value ="/products")
+	public ModelAndView products() {
+		ModelAndView mv=new ModelAndView("home");
+		mv.addObject("title", "Products");
+		mv.addObject("userClickOnProducts",true);
+		return mv;
+	}
+	
+	
+	@RequestMapping(value ="/contact")
+	public ModelAndView contact() {
+		ModelAndView mv=new ModelAndView("home");
+		mv.addObject("title", "Contact Us");
+		mv.addObject("userClickOnContact",true);
+		return mv;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	/*@RequestMapping(value = {"/test"})
